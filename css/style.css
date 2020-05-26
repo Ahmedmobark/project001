@@ -23,6 +23,12 @@ p{
     line-height: 1.5;
 }
 
+header{
+    height:85vh;
+    background-image: url(../images/header-img.PNG);
+    background-size: cover;
+    background-position: right;
+}
 /*contact ifo*/
 .contacts span{
     margin:.5rem .4rem;
