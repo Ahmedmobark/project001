@@ -1,0 +1,119 @@
+
+
+
+
+ @font-face { 
+     font-family: Almarai; 
+     font-weight: bold; 
+     src: url('Almarai-Bold.ttf');
+    font-weight:normal;
+    src: url('Almarai-Regular.ttf');
+
+    }
+
+
+
+body{
+    color:gray;
+    font-family:'Almarai-Regular';
+}
+h1,h2,h3,h4,h5{
+    color:#333;
+    font-weight: 600;
+}
+p{
+    line-height: 1.5;
+}
+
+/*contact ifo*/
+.contacts span{
+    margin:.5rem .4rem;
+    color:#333;
+}
+
+/*nav*/
+.logo{
+    padding:.5rem 6.5rem 0;
+}
+.logo-img{
+    display: block;
+    margin-left: auto;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding:.5rem 1.5rem;
+    font-size: 1.4rem;
+}
+
+/*features*/
+.features{
+    padding:5rem 0;
+}
+.feat{
+    margin-bottom: 1rem;
+}
+.feat-text{
+    font-size: 1.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width:22rem;
+    margin:2rem 4rem;
+    transition: all .3s ease-in-out;
+}
+@media (max-width:1500px){
+    .card{
+        width:20rem;
+        margin:2rem 2rem;
+        transition: all .3s ease-in-out;
+    }   
+}
+@media (max-width:992px){
+    .card{
+        width:18rem;
+        margin:1rem 1rem;
+        transition: all .3s ease-in-out;
+    }   
+}
+.card:hover{
+    box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+.card-header{
+    overflow: hidden;
+}
+.card-header img{
+   transform: scale(1);
+   transition: all .4s ease-in-out;
+}
+.card-header img:hover{
+    transform: scale(1.2);
+ }
+
+ /*about-us*/
+ .about-us{
+     margin:4rem;
+     padding:7rem 0;
+     background-color: #ebebeb;
+     color:#333;
+ }
+ .about-us_content{
+     font-size: 1.7rem;
+     width:50%;
+     line-height: 2;
+     letter-spacing:1px;
+     margin-bottom: 5px;
+ }
+ .about-us_img{
+     overflow: hidden;
+ }
+ .about-us_img img{
+     transition: all .3s ease-in-out;
+    transform:scale(1); 
+}
+ .about-us_img img:hover{
+transform:scale(1.3);
+}
