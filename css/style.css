@@ -11,8 +11,6 @@
 
     }
 
-
-
 body{
     color:gray;
     font-family:'Almarai-Regular';
@@ -43,7 +41,12 @@ p{
     padding:.5rem 1.5rem;
     font-size: 1.4rem;
 }
-
+@media (max-width:1200px){
+    .navbar-light .navbar-nav .nav-link{
+        padding:.5rem 1rem;
+        font-size: 1.2rem;
+    }  
+}
 /*features*/
 .features{
     padding:5rem 0;
@@ -95,7 +98,7 @@ p{
 
  /*about-us*/
  .about-us{
-     margin:4rem;
+     margin:4rem 0;
      padding:7rem 0;
      background-color: #ebebeb;
      color:#333;
