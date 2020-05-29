@@ -1,8 +1,9 @@
 
 
 body{
-    color:gray;
+    color:#666;
     font-family: 'Almarai', sans-serif;
+    font-size: 14px;
 }
 h1,h2,h3,h4,h5{
     color:#333;
@@ -31,6 +32,15 @@ dropdown menu
 .dropdow-list{
     display: flex;
     flex-direction: column;
+    width:10rem;
+}
+.navbar-nav{
+    margin: 0 auto;
+}
+@media (max-width:993px){
+    .navbar-nav{
+        margin-right: 0;
+    }
 }
 .dropdow-list h6 {
   margin:0 auto;
@@ -90,8 +100,9 @@ header{
     } 
 }
 .logo{
-    padding:.5rem 6.5rem 0;
     margin-left: auto;
+    padding: .5rem 4.5rem 0;
+
 }
 .logo-img{
     display: block;
@@ -125,7 +136,7 @@ header{
     margin-bottom: 1rem;
 }
 .feat-text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 @media (max-width:993px){
     .info{
@@ -145,6 +156,13 @@ header{
     border: none;
 
 }
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border:none;
+}
 @media (max-width:1500px){
     .card{
         width:20rem;
@@ -152,10 +170,23 @@ header{
         transition: all .3s ease-in-out;
     }   
 }
+@media (max-width:1182px){
+    .card{
+        width:18rem;
+        margin:1rem 1rem;
+    }  
+}
 @media (max-width:992px){
     .card{
         width:18rem;
         margin:1rem 1rem;
+        transition: all .3s ease-in-out;
+    }   
+}
+@media (max-width:500px){
+    .card{
+        width:18rem;
+        margin:1rem .5rem;
         transition: all .3s ease-in-out;
     }   
 }
@@ -211,6 +242,7 @@ footer{
 }
 .list li{
     padding:.5rem 0;
+    color:#6d6d6d;
 }
 .list .heading{
     color: #333;
