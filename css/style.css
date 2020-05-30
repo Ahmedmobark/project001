@@ -110,6 +110,7 @@ header{
 }
 .logo-img{
     display: block;
+    height:60px;
 }
 @media (max-width:992px){
     .logo-img{
