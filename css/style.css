@@ -6,8 +6,8 @@ body{
     font-size: 14px;
 }
 h1,h2,h3,h4,h5{
-    color:#333;
-    font-weight: 600;
+    color:#222;
+    font-weight: 500;
 }
 p{
     line-height: 1.5;
@@ -15,7 +15,9 @@ p{
 /*
 dropdown menu
 */
-
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    right: 0;
+}
 .drop-lists{
     display: flex;
     justify-content: space-around;
@@ -53,8 +55,8 @@ dropdown menu
     .drop-list-content{
         display: none;
     }
-    .drop-list-content h6 a:hover .drop-list-content{
-        display: none;
+    .drop-list-content h6 a:active .drop-list-content{
+        display: flex;
     }
     .dropdow-list h6 {
         margin:0;
@@ -120,12 +122,13 @@ header{
 }
 .navbar-light .navbar-nav .nav-link{
     padding:.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 800;
 }
 @media (max-width:1200px){
     .navbar-light .navbar-nav .nav-link{
         padding:.5rem .5rem;
-        font-size: 1.1rem;
+        font-size:.9rem;
     }  
 }
 /*features*/
@@ -150,6 +153,7 @@ header{
     flex-wrap: wrap;
 }
 .card{
+    cursor: pointer;
     width:22rem;
     margin:2rem 4rem;
     transition: all .3s ease-in-out;
@@ -165,8 +169,8 @@ header{
 }
 @media (max-width:1500px){
     .card{
-        width:20rem;
-        margin:2rem 2rem;
+        width:22rem;
+        margin:2rem 1rem;
         transition: all .3s ease-in-out;
     }   
 }
@@ -241,9 +245,35 @@ footer{
     list-style: none;
 }
 .list li{
-    padding:.5rem 0;
     color:#6d6d6d;
+    padding:.2rem 0;
+    font-weight: 200;
 }
 .list .heading{
     color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon i{
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 50;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+}
+.social-icon .soci-i{
+    border: 1px solid #555;
+    position: relative;
+    border-radius: 50%;
+    background-color: #555;
+    display: inline-block;
+    width: 35px;
+    color:white;
+    height: 35px;
+    margin: 0 7px;
+}
+.btn{
+    padding:0;
 }
