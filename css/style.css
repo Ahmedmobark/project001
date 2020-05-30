@@ -104,7 +104,9 @@ header{
 .logo{
     margin-left: auto;
     padding: .5rem 10.5rem 0;
-
+    top: 48px;
+    position: relative;
+    z-index: 90000;
 }
 .logo-img{
     display: block;
